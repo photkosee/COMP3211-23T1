@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Apr  8 17:58:42 2023
+# Process ID: 32384
+# Current directory: C:/Users/user/Desktop/3211_lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15264 C:\Users\user\Desktop\3211_lab3\3211_lab3.xpr
+# Log file: C:/Users/user/Desktop/3211_lab3/vivado.log
+# Journal file: C:/Users/user/Desktop/3211_lab3\vivado.jou
+# Running On: LAPTOP-HIKTNO12, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 7966 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/3211_lab3/3211_lab3.xpr
+update_compile_order -fileset sources_1

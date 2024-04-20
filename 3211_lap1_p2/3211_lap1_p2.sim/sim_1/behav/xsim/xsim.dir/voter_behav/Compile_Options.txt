@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "voter_behav" "xil_defaultlib.voter" -log "elaborate.log" 

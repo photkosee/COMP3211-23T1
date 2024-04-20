@@ -1,0 +1,377 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Mar 10 06:57:36 2023
+# Process ID: 24116
+# Current directory: C:/Users/user/Desktop/3211_lab2/3211_lab2.runs/synth_1
+# Command line: vivado.exe -log single_cycle_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_core.tcl
+# Log file: C:/Users/user/Desktop/3211_lab2/3211_lab2.runs/synth_1/single_cycle_core.vds
+# Journal file: C:/Users/user/Desktop/3211_lab2/3211_lab2.runs/synth_1\vivado.jou
+# Running On: LAPTOP-HIKTNO12, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 7966 MB
+#-----------------------------------------------------------
+source single_cycle_core.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/utils_1/imports/synth_1/single_cycle_core.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/utils_1/imports/synth_1/single_cycle_core.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top single_cycle_core -part xc7a100tftg256-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8868
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'data_b' is neither a static name nor a globally static expression [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'single_cycle_core' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:56]
+INFO: [Synth 8-3491] module 'program_counter' declared at 'C:/Users/user/Desktop/3211/VHDL/program_counter.vhd:28' bound to instance 'pc' of component 'program_counter' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'program_counter' [C:/Users/user/Desktop/3211/VHDL/program_counter.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'program_counter' (0#1) [C:/Users/user/Desktop/3211/VHDL/program_counter.vhd:35]
+INFO: [Synth 8-3491] module 'adder_4b' declared at 'C:/Users/user/Desktop/3211/VHDL/adder_4b.vhd:25' bound to instance 'next_pc' of component 'adder_4b' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'adder_4b' [C:/Users/user/Desktop/3211/VHDL/adder_4b.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'adder_4b' (0#1) [C:/Users/user/Desktop/3211/VHDL/adder_4b.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_4b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:32]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_1b' (0#1) [C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:32]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_4b' (0#1) [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:32]
+INFO: [Synth 8-3491] module 'instruction_memory' declared at 'C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:27' bound to instance 'insn_mem' of component 'instruction_memory' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'instruction_memory' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:34]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'instruction_memory' (0#1) [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:34]
+INFO: [Synth 8-3491] module 'sign_extend_4to16' declared at 'C:/Users/user/Desktop/3211/VHDL/sign_extend_4to16.vhd:25' bound to instance 'sign_extend_a' of component 'sign_extend_4to16' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'sign_extend_4to16' [C:/Users/user/Desktop/3211/VHDL/sign_extend_4to16.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sign_extend_4to16' (0#1) [C:/Users/user/Desktop/3211/VHDL/sign_extend_4to16.vhd:30]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/user/Desktop/3211/VHDL/control_unit.vhd:44' bound to instance 'ctrl_unit' of component 'control_unit' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/user/Desktop/3211/VHDL/control_unit.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/user/Desktop/3211/VHDL/control_unit.vhd:56]
+INFO: [Synth 8-3491] module 'mux_2to1_4b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:25' bound to instance 'mux_reg_dst' of component 'mux_2to1_4b' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_4b__parameterized1' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:32]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_4b__parameterized1' (0#1) [C:/Users/user/Desktop/3211/VHDL/mux_2to1_4b.vhd:32]
+INFO: [Synth 8-3491] module 'register_file' declared at 'C:/Users/user/Desktop/3211/VHDL/register_file.vhd:26' bound to instance 'reg_file' of component 'register_file' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/user/Desktop/3211/VHDL/register_file.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [C:/Users/user/Desktop/3211/VHDL/register_file.vhd:41]
+INFO: [Synth 8-3491] module 'mux_2to1_16b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:25' bound to instance 'mux_alu_src' of component 'mux_2to1_16b' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_16b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:32]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-3491] module 'mux_2to1_1b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_1b.vhd:25' bound to instance 'bit_mux' of component 'mux_2to1_1b' [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_16b' (0#1) [C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'alu_combined' [C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/sources_1/new/alu_new.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'adder_16b' [C:/Users/user/Desktop/3211/VHDL/adder_16b.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'adder_16b' (0#1) [C:/Users/user/Desktop/3211/VHDL/adder_16b.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'comparator_bne' [C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/sources_1/new/compare.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'comparator_bne' (0#1) [C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/sources_1/new/compare.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'comparator_la' [C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/sources_1/new/comparator_la.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'comparator_la' (0#1) [C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/sources_1/new/comparator_la.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'slri' [C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/sources_1/new/slri.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'slri' (0#1) [C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/sources_1/new/slri.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'alu_combined' (0#1) [C:/Users/user/Desktop/3211_lab2/3211_lab2.srcs/sources_1/new/alu_new.vhd:43]
+INFO: [Synth 8-3491] module 'data_memory' declared at 'C:/Users/user/Desktop/3211/VHDL/data_memory.vhd:26' bound to instance 'data_mem' of component 'data_memory' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'data_memory' [C:/Users/user/Desktop/3211/VHDL/data_memory.vhd:35]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/user/Desktop/3211/VHDL/data_memory.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'data_memory' (0#1) [C:/Users/user/Desktop/3211/VHDL/data_memory.vhd:35]
+INFO: [Synth 8-3491] module 'mux_2to1_16b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:25' bound to instance 'mux_mem_to_reg' of component 'mux_2to1_16b' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:257]
+INFO: [Synth 8-3491] module 'mux_2to1_16b' declared at 'C:/Users/user/Desktop/3211/VHDL/mux_2to1_16b.vhd:25' bound to instance 'mux_la' of component 'mux_2to1_16b' [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:263]
+INFO: [Synth 8-256] done synthesizing module 'single_cycle_core' (0#1) [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:56]
+WARNING: [Synth 8-7129] Port Imme[4] in module slri is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imme[3] in module slri is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imme[2] in module slri is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imme[1] in module slri is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imme[0] in module slri is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tftg256-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tftg256-3
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[0]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[1]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[2]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[3]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[4]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[5]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[6]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[7]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[8]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[9]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[10]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_process.var_insn_mem_reg[11]' [C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 32    
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 47    
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 75    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][15]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][14]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][13]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][12]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][11]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][10]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][9]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][8]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][7]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][6]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][5]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][4]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][3]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][2]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][1]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[0][0]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][15]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][14]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][13]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][12]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][11]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][10]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][9]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][8]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][7]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][6]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][5]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][4]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][3]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][2]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][1]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[1][0]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][15]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][14]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][13]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][12]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][11]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][10]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][9]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][8]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][7]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][6]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][5]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][4]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][3]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][2]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][1]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[2][0]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][15]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][14]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][13]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][12]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][11]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][10]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][9]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][8]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][7]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][6]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][5]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][4]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][3]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][2]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][1]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[3][0]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][15]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][14]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][13]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][12]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][11]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][10]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][9]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][8]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][7]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][6]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][5]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][4]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][3]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][2]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][1]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[4][0]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][15]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][14]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][13]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][12]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][11]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][10]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][9]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][8]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][7]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][6]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][5]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][4]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][3]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][2]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][1]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[5][0]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[6][15]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[6][14]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[6][13]) is unused and will be removed from module single_cycle_core.
+WARNING: [Synth 8-3332] Sequential element (insn_mem/mem_process.var_insn_mem_reg[6][12]) is unused and will be removed from module single_cycle_core.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 213 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1403.465 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1403.465 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1403.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 22349356
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1403.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/3211_lab2/3211_lab2.runs/synth_1/single_cycle_core.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file single_cycle_core_utilization_synth.rpt -pb single_cycle_core_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 10 06:58:18 2023...

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Single_cycle_core_TB_VHDL_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Single_cycle_core_TB_VHDL" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="11,073,076,991 ps"></ZoomStartTime>
+      <ZoomEndTime time="11,073,077,002 ps"></ZoomEndTime>
+      <Cursor1Time time="11,073,077,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/r_CLOCK" type="logic">
+      <obj_property name="ElementShortName">r_CLOCK</obj_property>
+      <obj_property name="ObjectShortName">r_CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/r_reset" type="logic">
+      <obj_property name="ElementShortName">r_reset</obj_property>
+      <obj_property name="ObjectShortName">r_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/c_CLOCK_PERIOD" type="other">
+      <obj_property name="ElementShortName">c_CLOCK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">c_CLOCK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_next_pc" type="array">
+      <obj_property name="ElementShortName">sig_next_pc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_next_pc[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_curr_pc" type="array">
+      <obj_property name="ElementShortName">sig_curr_pc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_curr_pc[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_one_4b" type="array">
+      <obj_property name="ElementShortName">sig_one_4b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_one_4b[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_pc_carry_out" type="logic">
+      <obj_property name="ElementShortName">sig_pc_carry_out</obj_property>
+      <obj_property name="ObjectShortName">sig_pc_carry_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_insn" type="array">
+      <obj_property name="ElementShortName">sig_insn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_insn[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_sign_extended_offset" type="array">
+      <obj_property name="ElementShortName">sig_sign_extended_offset[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_sign_extended_offset[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_reg_dst" type="logic">
+      <obj_property name="ElementShortName">sig_reg_dst</obj_property>
+      <obj_property name="ObjectShortName">sig_reg_dst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_reg_write" type="logic">
+      <obj_property name="ElementShortName">sig_reg_write</obj_property>
+      <obj_property name="ObjectShortName">sig_reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_alu_src" type="logic">
+      <obj_property name="ElementShortName">sig_alu_src</obj_property>
+      <obj_property name="ObjectShortName">sig_alu_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_mem_write" type="logic">
+      <obj_property name="ElementShortName">sig_mem_write</obj_property>
+      <obj_property name="ObjectShortName">sig_mem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_mem_to_reg" type="logic">
+      <obj_property name="ElementShortName">sig_mem_to_reg</obj_property>
+      <obj_property name="ObjectShortName">sig_mem_to_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_write_register" type="array">
+      <obj_property name="ElementShortName">sig_write_register[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_write_register[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_write_data" type="array">
+      <obj_property name="ElementShortName">sig_write_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_write_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_read_data_a" type="array">
+      <obj_property name="ElementShortName">sig_read_data_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_read_data_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_read_data_b" type="array">
+      <obj_property name="ElementShortName">sig_read_data_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_read_data_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_alu_src_b" type="array">
+      <obj_property name="ElementShortName">sig_alu_src_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_alu_src_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_alu_result" type="array">
+      <obj_property name="ElementShortName">sig_alu_result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_alu_result[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_alu_carry_out" type="logic">
+      <obj_property name="ElementShortName">sig_alu_carry_out</obj_property>
+      <obj_property name="ObjectShortName">sig_alu_carry_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Single_cycle_core_TB_VHDL/UUT/sig_data_mem_out" type="array">
+      <obj_property name="ElementShortName">sig_data_mem_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_data_mem_out[15:0]</obj_property>
+   </wvobject>
+</wave_config>

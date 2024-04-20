@@ -1,0 +1,7 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user/Desktop/3211/VHDL/control_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user/Desktop/3211/VHDL/instruction_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'instruction_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pipelined_core'
+WARNING: [VRFC 10-3093] actual for formal port 'data_b' is neither a static name nor a globally static expression [C:/Users/user/Desktop/3211/VHDL/single_cycle_core.vhd:173]

@@ -1,0 +1,47 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Pipelined_core_TB_VHDL_behav xil_defaultlib.Pipelined_core_TB_VHDL -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns TRUE; left argument length 4 is different from right argument length 16 for 'std_logic_vector_93' array [C:/Users/user/Desktop/3211_lab3/3211_lab3.srcs/sources_1/new/Forwarding_unit.vhd:54]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns TRUE; left argument length 4 is different from right argument length 16 for 'std_logic_vector_93' array [C:/Users/user/Desktop/3211_lab3/3211_lab3.srcs/sources_1/new/Forwarding_unit.vhd:56]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns TRUE; left argument length 4 is different from right argument length 16 for 'std_logic_vector_93' array [C:/Users/user/Desktop/3211_lab3/3211_lab3.srcs/sources_1/new/Forwarding_unit.vhd:58]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns TRUE; left argument length 4 is different from right argument length 16 for 'std_logic_vector_93' array [C:/Users/user/Desktop/3211_lab3/3211_lab3.srcs/sources_1/new/Forwarding_unit.vhd:60]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.program_counter [program_counter_default]
+Compiling architecture behavioural of entity xil_defaultlib.adder_4b [adder_4b_default]
+Compiling architecture behavioural of entity xil_defaultlib.mux_2to1_1b [mux_2to1_1b_default]
+Compiling architecture structural of entity xil_defaultlib.mux_2to1_4b [mux_2to1_4b_default]
+Compiling architecture behavioral of entity xil_defaultlib.instruction_memory [instruction_memory_default]
+Compiling architecture behavioural of entity xil_defaultlib.PipelineRegister [\PipelineRegister(n=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_IF_ID [reg_if_id_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extend_4to16 [sign_extend_4to16_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture behavioural of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioural of entity xil_defaultlib.PipelineRegister [\PipelineRegister(n=70)\]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_ID_EX [reg_id_ex_default]
+Compiling architecture structural of entity xil_defaultlib.mux_2to1_16b [mux_2to1_16b_default]
+Compiling architecture behavioral of entity xil_defaultlib.Forwarding_unit [forwarding_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_3to1_16b [mux_3to1_16b_default]
+Compiling architecture behavioural of entity xil_defaultlib.adder_16b [adder_16b_default]
+Compiling architecture behavioral of entity xil_defaultlib.comparator_bne [comparator_bne_default]
+Compiling architecture behavioral of entity xil_defaultlib.comparator_la [comparator_la_default]
+Compiling architecture behavioral of entity xil_defaultlib.slri [slri_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_combined [alu_combined_default]
+Compiling architecture behavioural of entity xil_defaultlib.PipelineRegister [\PipelineRegister(n=46)\]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_EX_MEM [reg_ex_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_memory [data_memory_default]
+Compiling architecture behavioural of entity xil_defaultlib.PipelineRegister [\PipelineRegister(n=45)\]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_MEM_WB [reg_mem_wb_default]
+Compiling architecture structural of entity xil_defaultlib.pipelined_core [pipelined_core_default]
+Compiling architecture behave of entity xil_defaultlib.pipelined_core_tb_vhdl
+Built simulation snapshot Pipelined_core_TB_VHDL_behav

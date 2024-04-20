@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Mar 10 06:58:46 2023
+# Process ID: 52176
+# Current directory: C:/Users/user/Desktop/3211_lab2/3211_lab2.runs/impl_1
+# Command line: vivado.exe -log single_cycle_core.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source single_cycle_core.tcl -notrace
+# Log file: C:/Users/user/Desktop/3211_lab2/3211_lab2.runs/impl_1/single_cycle_core.vdi
+# Journal file: C:/Users/user/Desktop/3211_lab2/3211_lab2.runs/impl_1\vivado.jou
+# Running On: LAPTOP-HIKTNO12, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 7966 MB
+#-----------------------------------------------------------
+source single_cycle_core.tcl -notrace

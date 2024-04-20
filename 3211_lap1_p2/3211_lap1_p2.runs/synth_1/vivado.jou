@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Feb 22 12:48:12 2023
+# Process ID: 26460
+# Current directory: C:/Users/user/Desktop/3211_lap1_p2/3211_lap1_p2.runs/synth_1
+# Command line: vivado.exe -log voter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source voter.tcl
+# Log file: C:/Users/user/Desktop/3211_lap1_p2/3211_lap1_p2.runs/synth_1/voter.vds
+# Journal file: C:/Users/user/Desktop/3211_lap1_p2/3211_lap1_p2.runs/synth_1\vivado.jou
+# Running On: LAPTOP-HIKTNO12, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 7966 MB
+#-----------------------------------------------------------
+source voter.tcl -notrace
